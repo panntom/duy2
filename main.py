@@ -6,6 +6,7 @@ Main program structure with menu and data handling
 
 import json
 import os
+from books import books_menu as books_management_menu
 
 # Constants - File paths
 BOOKS_FILE = "data/books.json"
@@ -105,14 +106,9 @@ def display_main_menu():
 
 
 def books_menu():
-    """
-    Books management submenu
-    TO BE IMPLEMENTED BY CONTRIBUTOR 1
-    """
-    print("\n--- Books Management ---")
-    print("⚠️ This feature will be implemented by Contributor 1")
-    print("Waiting for feature/books-menu branch...")
-    input("\nPress Enter to continue...")
+    """Books menu - IMPLEMENTED BY CONTRIBUTOR 1"""
+    global books
+    books_management_menu(books)
 
 
 def members_menu():
